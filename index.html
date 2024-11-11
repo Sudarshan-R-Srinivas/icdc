@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IC Design Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1d1f22;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .title-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            padding: 15px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar a {
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+            border-radius: 8px;
+        }
+        .navbar a:hover {
+            background-color: #ff6600;
+            color: #fff;
+        }
+        /* Sections */
+        .section {
+            margin: 30px 0;
+            background-color: #333;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transform: perspective(1000px) rotateY(0deg);
+            transition: transform 0.5s ease-in-out;
+        }
+        .section:hover {
+            transform: perspective(1000px) rotateY(10deg);
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff6600;
+            text-decoration: underline;
+            margin-bottom: 15px;
+        }
+        .section p {
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+        /* Gallery */
+        .gallery-container {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .gallery-container h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff6600;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+        .gallery-container .slides {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+        .gallery-container .slide {
+            min-width: 100%;
+            flex-shrink: 0;
+            transition: transform 1s ease-in-out;
+        }
+        .gallery-container .slide img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="IC Design Club" class="title-image">
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="#about-us">About Us</a>
+            <a href="#our-events">Our Events</a>
+            <a href="#our-mission">Our Mission</a>
+            <a href="#our-vision">Our Vision</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+
+        <div class="section" id="about-us">
+            <h2>About Us</h2>
+            <p>DECCTEROUS - IC Design Club of ECE department, NIE Mysuru, aims to provide practical knowledge as well as strong fundamentals in Electronics and Communication Engineering. Our mission is to prepare students for a career in the Core Domains by equipping them with cutting-edge skills and industry knowledge.</p>
+        </div>
+
+        <div class="section" id="our-events">
+            <h2>Our Events</h2>
+            <p>Join our exciting seminars, hackathons, and project showcases to learn and network with industry experts.</p>
+            <div class="section">
+                <h3>Workshops</h3>
+                <p>We conduct hands-on workshops to dive deep into IC design concepts, tools, and technologies.</p>
+            </div>
+            <div class="section">
+                <h3>Projects</h3>
+                <p>Compete and collaborate in solving real-world circuit design challenges.</p>
+            </div>
+            <div class="section">
+                <h3>Guest Lectures</h3>
+                <p>Insights from industry leaders on trends and innovations in IC design.</p>
+            </div>
+        </div>
+
+        <div class="section" id="our-mission">
+            <h2>Our Mission</h2>
+            <p>The mission of the Integrated Circuit Design Club is to cultivate an environment of experiential learning where members are empowered to acquire and enhance the skills necessary for a successful career in the core Electronics and Communication domain. Through hands-on projects, industry interactions, and collaborative initiatives, the club strives to nurture technical competence and innovation among its members.</p>
+        </div>
+
+        <div class="section" id="our-vision">
+            <h2>Our Vision</h2>
+            <p>The Integrated Circuit Design Club envisions becoming a vibrant center of excellence in both analog and digital circuit design, providing innovative solutions for various applications. By fostering strong collaboration between industry and academia, the club aims to address the evolving needs of core industries, thereby bridging the gap and promoting technological advancements in the field.</p>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gallery-container" id="gallery">
+            <h2>Gallery</h2>
+            <div class="slides">
+                <div class="slide">
+                    <img src="image1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="slide">
+                    <img src="image2.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="slide">
+                    <img src="image3.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="slide">
+                    <img src="image4.jpg" alt="Gallery Image 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 IC Design Club. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slidesContainer = document.querySelector('.slides');
+
+        function showSlide(index) {
+            slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    </script>
+</body>
+</html>
